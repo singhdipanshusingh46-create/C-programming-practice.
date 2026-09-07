@@ -1,0 +1,21 @@
+/*Question:  
+Write a C program to calculate the power of a number using the pow() function from the math library.
+Take two integers as input: the base and the exponent, and display the result.*/
+
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int n;
+    int x;
+    printf("enter a number:");
+    scanf("%d",&n);
+    printf("enter a number:");
+    scanf("%d",&x);
+    
+    int q=pow(n,x);
+    printf("the power of %d",q);
+    return 0;
+    
+    
+}
