@@ -1,0 +1,31 @@
+/*Question:
+Write a C program to calculate the combination (nCr) of two given numbers using factorial method.*/
+
+#include<stdio.h>
+int main() {
+	int n;
+	int r;
+
+	printf("enter a number:");
+		scanf("%d",&n);
+	printf("enter a number:");
+	scanf("%d",&r);
+
+	int nfact=1;
+	int rfact=1;
+	int nrfact=1;
+
+	for(int i=2; i<=n; i++) {
+		nfact=nfact*i;
+	}
+	for(int i=2; i<=r; i++) {
+		rfact=rfact*i;
+	}
+	for(int i=2; i<=n-r; i++) {
+		nrfact=nrfact*i;
+	}
+	int f=nfact/(rfact*nrfact);
+	printf("%d",f);
+
+	return 0;
+}
