@@ -1,0 +1,20 @@
+/*Question:  
+Write a C program that defines a function add() to return the sum of two integers. In main(),
+take two numbers as input from the user, call the add() function, and print the result.
+*/
+
+#include<stdio.h>
+int add(int f, int g){
+    return f+g;
+}
+int main(){
+    int a;
+ printf("enter a first number");
+    scanf("%d",&a);
+    int b;
+    printf("enter a second number");
+    scanf("%d",&b);
+    int sum= add(a,b);
+    printf("%d",sum);
+    return 0;
+}
