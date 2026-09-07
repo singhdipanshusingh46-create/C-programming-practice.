@@ -1,0 +1,19 @@
+/*
+Question:  
+Write a C program that defines a function greet() which prints two greeting messages, 
+and call this function three times from the main() function.
+*/
+
+#include<stdio.h>
+void greet(){
+    printf("good morning\n");
+    printf("how are you\n");
+    return;
+}
+
+int main(){
+    greet();
+    greet();
+    greet();
+    return 0;
+}
